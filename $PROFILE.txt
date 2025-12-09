@@ -1,0 +1,14 @@
+function gitBranch {
+    $branch = git rev-parse --abbrev-ref HEAD 2>$null
+    if ($branch) {
+        return " git:($branch)"
+    }
+    return ""
+}
+
+function prompt {
+    $path = $(Get-Location)
+    $branch = gitBranch
+    Write-Host "$path$branch" -ForegroundColor Cyan -NoNewline
+    return "> "
+}
