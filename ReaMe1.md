@@ -11,4 +11,4 @@ Watch tutorial on YouTube.
 
 ## Local Development
 
-1. Open index.html in your browser. ok.
+1. Open index.html in your browser. You have to do this. 
